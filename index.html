@@ -8,10 +8,14 @@
                 font-size: 14px;
                 font-family: arial, sans-serif;
             }
-            .main-content {
+            .main-content {               
                 margin-top: 15%;
                 font-size: 14px;
                 font-family: arial, sans-serif;
+            }
+            .buttons {
+                display: flex;
+                flex-direction: row;                
             }
             img {
                 display: block;
@@ -25,6 +29,7 @@
                 ;
             }
             .search-bar {
+                margin-bottom: 25px;
                 position: relative;
                 left: 34%; 
                 border: solid 0.5px silver;
@@ -37,19 +42,48 @@
                 background-repeat: no-repeat, no-repeat;
                 padding-left: 40px; 
                 outline: none;
-            }  
+            } 
+            .search-btn {
+                position: relative;
+                left: 43%;
+                width: 127.41px;
+                height: 36px;
+                background-color: white;
+                border: 1px solid white
+            } 
+            .lucky-btn {
+                position: relative;
+                left: 44.5%; 
+                width: 142.5px;
+                height: 36px; 
+                background-color: white;
+                border: 1px solid white              
+            }
             .search-bar:hover {
                 box-shadow: 0 0 6px silver;
-            }         
+            }        
+            .lucky-btn:hover {
+                cursor: pointer;
+                box-shadow: 0 0 6px silver;
+                border-radius: 5px;
+            } 
+            .search-btn:hover {
+                cursor: pointer;
+                box-shadow: 0 0 6px silver;
+                border-radius: 5px;
+            } 
         </style>
     </head>
     <body>
         <div class="main-content">
             <img src="images/Foogle.png">
-            <form>
+            <form>                
                 <input type="text" class="search-bar" id="search-bar">
+                <div class="buttons-row">
+                    <input type="button" class="search-btn" value="Google Search">
+                    <input type="button" class="lucky-btn" value="I'm Feeling Lucky"
+                </div>
             </form>
-        </div>
-        
+        </div>      
     </body>
 </html>
