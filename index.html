@@ -8,24 +8,43 @@
                 font-size: 14px;
                 font-family: arial, sans-serif;
             }
-            .top-page {
-                display: flex;
+            .search {
+                margin-top: 15%;
+                ;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 15px;
+                width: 272px;
+                height: 92px;
                 position: relative;
-                left: 90%;
+                bottom: 40%;
+                ;
             }
-            .top-page-item {
-                margin: 5px;   
-            }
+            .search-bar {
+                position: relative;
+                left: 34%; 
+                border: solid 0.5px silver;
+                border-radius: 25px;
+                width: 582px;
+                height: 40px;
+                background-image: url("images/outline_search_black_24dp.png"), url("images/Google_mic.png");
+                background-size: 20px, 15px;
+                background-position: 2% 12px, 97% 10px;
+                background-repeat: no-repeat, no-repeat;
+                
+            }            
         </style>
     </head>
     <body>
-        <div class="top-page">
-            <div class="top-page-item">
-                <span class="gmail">Gmail</span>
-            </div>
-            <div class="top-page-item">
-                <span class="images">Images</span>
-            </div>
+        <div class="search">
+            <img src="images/Foogle.png">
+            <form>
+                <input type="text" class="search-bar" id="search-bar">
+            </form>
         </div>
+        
     </body>
 </html>
