@@ -17,7 +17,7 @@
                 display: flex;
                 flex-direction: row;                
             }
-            img {
+            img.logo {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -27,6 +27,10 @@
                 position: relative;
                 bottom: 40%;
                 ;
+            }
+            img.app-icon {
+                height: 24px;
+                width: 24px;                
             }
             .search-bar {
                 margin-bottom: 25px;
@@ -72,11 +76,49 @@
                 box-shadow: 0 0 6px silver;
                 border-radius: 5px;
             } 
+            .navbar {
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                float: right;
+                margin: 5px;
+            }
+            a {
+                color: grey;
+                text-decoration: none;
+            }
+            img.acc-icon {
+                border-radius: 50%;
+                border: 1px solid black;
+                background-color: white;
+                height: 24px;
+                width: 24px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
         </style>
     </head>
     <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="#"></a><img class="acc-icon" src="images/outline_perm_identity_black_24dp.png"></li>
+                <li><a href="#"></a><img class="app-icon" src="images/google_apps.png"></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Gmail</a></li>
+                
+            </ul>
+        </div>
         <div class="main-content">
-            <img src="images/Foogle.png">
+            <img class ="logo" src="images/Foogle.png">
             <form>                
                 <input type="text" class="search-bar" id="search-bar">
                 <div class="buttons-row">
